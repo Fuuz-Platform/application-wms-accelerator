@@ -1,0 +1,15 @@
+{
+  "api": "application",
+  "modelName": "OrderType",
+  "payload": [
+    {
+      "id": "purchase",
+      "name": "Purchase",
+      "usable": true,
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

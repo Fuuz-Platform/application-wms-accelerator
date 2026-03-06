@@ -1,0 +1,18 @@
+{
+  "api": "application",
+  "modelName": "Process",
+  "payload": [
+    {
+      "id": "receive",
+      "code": "RECEIVE",
+      "system": true,
+      "usable": true,
+      "description": "A system process for any inventory that as been received into the system via the receiving process.",
+      "customData": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

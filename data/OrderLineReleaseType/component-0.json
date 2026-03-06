@@ -1,0 +1,37 @@
+{
+  "api": "application",
+  "modelName": "OrderLineReleaseType",
+  "payload": [
+    {
+      "id": "firm",
+      "name": "Firm",
+      "active": true,
+      "usable": true,
+      "description": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "forecasted",
+      "name": "Forecasted",
+      "active": false,
+      "usable": true,
+      "description": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "planned",
+      "name": "Planned",
+      "active": false,
+      "usable": true,
+      "description": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

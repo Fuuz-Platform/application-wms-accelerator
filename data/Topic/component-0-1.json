@@ -1,0 +1,24 @@
+{
+  "api": "application",
+  "modelName": "Topic",
+  "payload": [
+    {
+      "id": "cmcxjwr4k0cf30775f2g3g27o",
+      "name": "update.count.progress",
+      "description": "Fire this whenever something that would effect the progress of a count is preformed",
+      "valueSchema": {
+        "type": "object",
+        "properties": {
+          "countId": {
+            "type": "string"
+          }
+        }
+      },
+      "webhookAccessible": false,
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

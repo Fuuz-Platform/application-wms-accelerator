@@ -1,0 +1,605 @@
+{
+  "header": {
+    "id": "orderLineCreateWidget",
+    "name": "Order Line Create Widget",
+    "description": "",
+    "active": true,
+    "moduleId": "logistics",
+    "isWidget": true,
+    "_customFields": {
+      "_externalId": null
+    }
+  },
+  "version": {
+    "id": "cme7keop16dni0775hleabb9o",
+    "number": "0.0.8",
+    "description": "",
+    "screenId": "orderLineCreateWidget",
+    "design": {
+      "components": [
+        {
+          "name": "New Screen",
+          "tabTitle": "New Tab",
+          "type": "canvas",
+          "props": {
+            "design": {
+              "ROOT": {
+                "type": {
+                  "resolvedName": "Screen"
+                },
+                "isCanvas": true,
+                "props": {
+                  "padding": 0,
+                  "margin": 0,
+                  "flexDirection": "column",
+                  "flexWrap": false,
+                  "alignItems": "stretch",
+                  "justifyContent": "flex-start",
+                  "width": "100%",
+                  "height": "auto",
+                  "hidden": false,
+                  "flexGrow": false,
+                  "shadow": false,
+                  "borderRadius": 0,
+                  "flowsDelay": 0
+                },
+                "displayName": "Screen",
+                "custom": {
+                  "elementName": "Screen",
+                  "elementCounts": {
+                    "Container": 9,
+                    "Form": 1,
+                    "Text": 14,
+                    "Address": 1,
+                    "Markdown": 7,
+                    "JSON": 4,
+                    "Action Button": 5,
+                    "Float": 1,
+                    "Select": 2
+                  }
+                },
+                "parent": null,
+                "hidden": false,
+                "nodes": [
+                  "NgdR2HtSpY"
+                ],
+                "linkedNodes": {}
+              },
+              "NgdR2HtSpY": {
+                "type": {
+                  "resolvedName": "Container"
+                },
+                "isCanvas": true,
+                "props": {
+                  "padding": 0,
+                  "margin": 0,
+                  "flexWrap": true,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "alignItems": "stretch",
+                  "width": "100%",
+                  "height": "auto",
+                  "hidden": false,
+                  "flexGrow": true,
+                  "flexShrink": false,
+                  "shadow": false,
+                  "borderRadius": 0,
+                  "collapsible": false,
+                  "collapsedFooter": false,
+                  "collapsedSize": 0,
+                  "collapsedByDefault": false,
+                  "onClickTransform": false,
+                  "layout": "flex",
+                  "bordersInput": {},
+                  "justifyItems": "start",
+                  "style": {},
+                  "background": "paper"
+                },
+                "displayName": "Container",
+                "custom": {
+                  "elementName": "Container1"
+                },
+                "parent": "ROOT",
+                "hidden": false,
+                "nodes": [
+                  "5TsGM4vnHl"
+                ],
+                "linkedNodes": {}
+              },
+              "5TsGM4vnHl": {
+                "type": {
+                  "resolvedName": "Form"
+                },
+                "isCanvas": true,
+                "props": {
+                  "query": {
+                    "api": "Application",
+                    "query": null,
+                    "dataPath": "edges[0]",
+                    "dataTransform": {
+                      "transform": null,
+                      "remote": true
+                    },
+                    "dataSubscription": {
+                      "enabled": false
+                    },
+                    "autoLoad": true,
+                    "parameters": "{\n  \"filter\": {\n    \"id\": {\n      \"_eq\": $coalesce([id, \"-1\"])\n    }\n  },\n  \"first\": 1\n}",
+                    "fields": [
+                      "id"
+                    ],
+                    "disableDataChangeIndicator": false,
+                    "model": "OrderLine"
+                  },
+                  "blockNavigationWhenDirty": true,
+                  "description": ""
+                },
+                "displayName": "Form",
+                "custom": {
+                  "elementName": "OrderLineCreateForm"
+                },
+                "parent": "NgdR2HtSpY",
+                "hidden": false,
+                "nodes": [
+                  "Qeor0PLevq",
+                  "HI85z2Fk28"
+                ],
+                "linkedNodes": {}
+              },
+              "Qeor0PLevq": {
+                "type": {
+                  "resolvedName": "Container"
+                },
+                "isCanvas": true,
+                "props": {
+                  "padding": 8,
+                  "margin": 8,
+                  "flexWrap": true,
+                  "flexDirection": "column",
+                  "justifyContent": "flex-start",
+                  "alignItems": "stretch",
+                  "width": "100%",
+                  "height": "auto",
+                  "hidden": false,
+                  "flexGrow": true,
+                  "flexShrink": false,
+                  "shadow": false,
+                  "borderRadius": 0,
+                  "collapsible": false,
+                  "collapsedFooter": false,
+                  "collapsedSize": 0,
+                  "collapsedByDefault": false,
+                  "onClickTransform": false,
+                  "layout": "flex",
+                  "bordersInput": {},
+                  "justifyItems": "start",
+                  "style": {},
+                  "background": "paper",
+                  "data": {}
+                },
+                "displayName": "Container",
+                "custom": {
+                  "elementName": "Container2"
+                },
+                "parent": "5TsGM4vnHl",
+                "hidden": false,
+                "nodes": [
+                  "ct-FKcIoQ8",
+                  "Kqew1PwbcR",
+                  "aI63YMV2hR"
+                ],
+                "linkedNodes": {}
+              },
+              "HI85z2Fk28": {
+                "type": {
+                  "resolvedName": "Container"
+                },
+                "isCanvas": true,
+                "props": {
+                  "padding": 8,
+                  "margin": 8,
+                  "flexWrap": true,
+                  "flexDirection": "row",
+                  "justifyContent": "end",
+                  "alignItems": "stretch",
+                  "width": "100%",
+                  "height": "auto",
+                  "hidden": false,
+                  "flexGrow": false,
+                  "flexShrink": false,
+                  "shadow": false,
+                  "borderRadius": 0,
+                  "collapsible": false,
+                  "collapsedFooter": false,
+                  "collapsedSize": 0,
+                  "collapsedByDefault": true,
+                  "onClickTransform": false,
+                  "layout": "flex",
+                  "bordersInput": {},
+                  "justifyItems": "start",
+                  "style": {
+                    "borderTop": "solid black 1px"
+                  },
+                  "background": "paper",
+                  "data": {}
+                },
+                "displayName": "Container",
+                "custom": {
+                  "elementName": "Container8"
+                },
+                "parent": "5TsGM4vnHl",
+                "hidden": false,
+                "nodes": [
+                  "U0hT-IzzMt",
+                  "CqfSJH4slT"
+                ],
+                "linkedNodes": {}
+              },
+              "CqfSJH4slT": {
+                "type": {
+                  "resolvedName": "ActionButton"
+                },
+                "isCanvas": false,
+                "props": {
+                  "margin": 6,
+                  "buttonColor": "primary",
+                  "icon": {
+                    "icon": "save"
+                  },
+                  "width": "76px",
+                  "height": "48px",
+                  "disabled": {
+                    "__transform": "$components.OrderLineCreateForm.formState.invalid",
+                    "__dynamicFields": {
+                      "payload": null,
+                      "context": []
+                    },
+                    "__cacheKey": "",
+                    "__remote": false
+                  },
+                  "hidden": false,
+                  "useIconButton": false,
+                  "disableHover": false,
+                  "disableRipple": false,
+                  "action": [
+                    {
+                      "type": "mutation",
+                      "api": "Application",
+                      "mutation": "mutation UpsertOrderLine($payload: [OrderLineUpsertPayloadInput!]!) {\n  upsertOrderLine(payload: $payload) {\n    id\n  }\n}",
+                      "transforms": {
+                        "pre": "(\r\n\r\n  $metadata.urlParameters.orderId?(\r\n    $id := $coalesce([$metadata.urlParameters.id, $cuid()]);\r\n    $data := $components.OrderLineCreateForm.data~>| $ | \r\n      { \r\n        \"orderId\":  $metadata.urlParameters.orderId,\r\n        \"productId\": product.id,\r\n        \"businessPartnerAddressId\":  businessPartnerAddress.id\r\n      }, \r\n      [\"total\", \"edges\", \"id\", \"businessPartnerAddress\", \"product\"] |;\r\n    \r\n    {\r\n      \"payload\":{\r\n        \"where\": { \"id\": $id },\r\n        \"update\": $data,\r\n        \"create\": $data    \r\n      }\r\n    }\r\n  )\r\n  :\r\n  $throw(\"No Order Id Provided.\")\r\n)",
+                        "post": "$components.Screen.fn.return()"
+                      }
+                    }
+                  ]
+                },
+                "displayName": "Action Button",
+                "custom": {
+                  "editor": {
+                    "category": "Interaction",
+                    "description": "Save button action.",
+                    "color": "#9c5a94",
+                    "elementName": "Save Button which saves form data.",
+                    "icon": "save",
+                    "requiresForm": true
+                  },
+                  "elementName": "Action Button"
+                },
+                "parent": "HI85z2Fk28",
+                "hidden": false,
+                "nodes": [],
+                "linkedNodes": {}
+              },
+              "U0hT-IzzMt": {
+                "type": {
+                  "resolvedName": "ActionButton"
+                },
+                "isCanvas": false,
+                "props": {
+                  "margin": 6,
+                  "buttonColor": "error",
+                  "icon": {
+                    "icon": "xmark",
+                    "color": "inherit",
+                    "variant": "duotone",
+                    "size": "icon"
+                  },
+                  "width": "76px",
+                  "height": "48px",
+                  "disabled": false,
+                  "hidden": false,
+                  "useIconButton": false,
+                  "disableHover": false,
+                  "disableRipple": false,
+                  "action": [
+                    {
+                      "type": "transformation",
+                      "transformation": "$components.Screen.fn.return()"
+                    }
+                  ]
+                },
+                "displayName": "Action Button",
+                "custom": {
+                  "elementName": "ActionButton4"
+                },
+                "parent": "HI85z2Fk28",
+                "hidden": false,
+                "nodes": [],
+                "linkedNodes": {}
+              },
+              "ct-FKcIoQ8": {
+                "type": {
+                  "resolvedName": "FloatInput"
+                },
+                "isCanvas": false,
+                "props": {
+                  "padding": 8,
+                  "width": "100%",
+                  "height": "auto",
+                  "validation": {
+                    "required": true
+                  },
+                  "uniqueValidationEnabled": false,
+                  "visible": true,
+                  "type": "float",
+                  "label": "Unit Price",
+                  "formElement": "Form1",
+                  "dataPath": "unitPrice",
+                  "target": {
+                    "dataPath": null
+                  },
+                  "description": "",
+                  "field": "unitPrice"
+                },
+                "displayName": "Float",
+                "custom": {
+                  "elementName": "Float1"
+                },
+                "parent": "Qeor0PLevq",
+                "hidden": false,
+                "nodes": [],
+                "linkedNodes": {}
+              },
+              "Kqew1PwbcR": {
+                "type": {
+                  "resolvedName": "SelectInput"
+                },
+                "isCanvas": false,
+                "props": {
+                  "padding": 8,
+                  "width": "100%",
+                  "height": "auto",
+                  "validation": {
+                    "required": true
+                  },
+                  "uniqueValidationEnabled": false,
+                  "visible": true,
+                  "type": "select",
+                  "label": "Product",
+                  "dialogMode": "never",
+                  "multiselect": false,
+                  "isClearable": true,
+                  "selectAll": true,
+                  "searchPredicate": "contains",
+                  "api": "Application",
+                  "stateTracking": "full",
+                  "optionLimit": 5,
+                  "optionLimitFlex": 5,
+                  "alwaysReloadOptions": false,
+                  "formElement": "Form1",
+                  "dataPath": "product",
+                  "target": {
+                    "dataPath": null
+                  },
+                  "description": "Direct link to the product for which this Order Line applies. Note, that if creating an order type of sale - you may want to use this which specifically indicates the productId that must be shipped; alternatively, the Catalog Item can provide a method to suggest any 1 of {} the list of CatalogItemProducts maybe used to fulfil this order line. It is not recommended to use both fields - if you do, the shipping logic will not consider the Catalog Item, it will only consider the productId as validation.",
+                  "field": "product",
+                  "labelPath": "code",
+                  "orderByField": "code",
+                  "query": {
+                    "fields": [
+                      "product.id",
+                      "product.code"
+                    ]
+                  },
+                  "dataModel": "Product",
+                  "selectFields": [
+                    "code"
+                  ],
+                  "additionalFields": []
+                },
+                "displayName": "Select",
+                "custom": {
+                  "elementName": "Select1"
+                },
+                "parent": "Qeor0PLevq",
+                "hidden": false,
+                "nodes": [],
+                "linkedNodes": {}
+              },
+              "wKBY0ug0E1": {
+                "type": {
+                  "resolvedName": "SelectInput"
+                },
+                "isCanvas": false,
+                "props": {
+                  "padding": 8,
+                  "width": "90%",
+                  "height": "auto",
+                  "validation": {
+                    "required": true
+                  },
+                  "uniqueValidationEnabled": false,
+                  "visible": true,
+                  "type": "select",
+                  "label": "Business Partner Address",
+                  "dialogMode": "never",
+                  "multiselect": false,
+                  "isClearable": true,
+                  "selectAll": true,
+                  "searchPredicate": "contains",
+                  "api": "Application",
+                  "stateTracking": "full",
+                  "optionLimit": 5,
+                  "optionLimitFlex": 5,
+                  "alwaysReloadOptions": false,
+                  "formElement": "Form1",
+                  "dataPath": "businessPartnerAddress",
+                  "target": {
+                    "dataPath": null
+                  },
+                  "description": "This address is specifically for the source location - If purchasing, or creating a transfer order - this address is the origin.",
+                  "field": "businessPartnerAddress",
+                  "labelPath": "code",
+                  "orderByField": "code",
+                  "query": {
+                    "fields": [
+                      "businessPartnerAddress.id",
+                      "businessPartnerAddress.code"
+                    ]
+                  },
+                  "dataModel": "BusinessPartnerAddress",
+                  "selectFields": [
+                    "code"
+                  ],
+                  "additionalFields": [],
+                  "additionalFilter": {
+                    "__transform": "{\n  \"_and\": [\n    {\n      \"businessPartnerId\": {\n        \"_eq\": $metadata.urlParameters.businessPartnerId\n      }\n    }\n  ]\n}",
+                    "__dynamicFields": {
+                      "payload": null,
+                      "context": []
+                    },
+                    "__cacheKey": "",
+                    "__remote": false
+                  }
+                },
+                "displayName": "Select",
+                "custom": {
+                  "elementName": "Select2"
+                },
+                "parent": "aI63YMV2hR",
+                "hidden": false,
+                "nodes": [],
+                "linkedNodes": {}
+              },
+              "aI63YMV2hR": {
+                "type": {
+                  "resolvedName": "Container"
+                },
+                "isCanvas": true,
+                "props": {
+                  "padding": 0,
+                  "margin": 0,
+                  "flexWrap": true,
+                  "flexDirection": "row",
+                  "justifyContent": "start",
+                  "alignItems": "center",
+                  "width": "100%",
+                  "height": "auto",
+                  "hidden": false,
+                  "flexGrow": false,
+                  "flexShrink": false,
+                  "shadow": false,
+                  "borderRadius": 0,
+                  "collapsible": false,
+                  "collapsedFooter": false,
+                  "collapsedSize": 0,
+                  "collapsedByDefault": false,
+                  "onClickTransform": false,
+                  "layout": "flex",
+                  "bordersInput": {},
+                  "justifyItems": "start",
+                  "style": {}
+                },
+                "displayName": "Container",
+                "custom": {
+                  "elementName": "Container9"
+                },
+                "parent": "Qeor0PLevq",
+                "hidden": false,
+                "nodes": [
+                  "wKBY0ug0E1",
+                  "An2IRHR4X7"
+                ],
+                "linkedNodes": {}
+              },
+              "An2IRHR4X7": {
+                "type": {
+                  "resolvedName": "ActionButton"
+                },
+                "isCanvas": false,
+                "props": {
+                  "margin": 6,
+                  "buttonColor": "primary",
+                  "icon": {
+                    "icon": "plus",
+                    "color": "inherit",
+                    "variant": "duotone",
+                    "size": "icon"
+                  },
+                  "width": "10%",
+                  "height": "48px",
+                  "disabled": false,
+                  "hidden": false,
+                  "useIconButton": true,
+                  "disableHover": false,
+                  "disableRipple": false,
+                  "action": [
+                    {
+                      "type": "form",
+                      "fields": [
+                        {
+                          "label": "Code",
+                          "name": "code",
+                          "type": "text",
+                          "dataPath": "code",
+                          "validation": {
+                            "required": true
+                          }
+                        },
+                        {
+                          "label": "Address",
+                          "name": "address",
+                          "type": "address",
+                          "dataPath": "address"
+                        },
+                        {
+                          "label": "Text Address",
+                          "name": "textAddress",
+                          "type": "markdown",
+                          "dataPath": "textAddress"
+                        }
+                      ],
+                      "title": "New Business Partner Address"
+                    },
+                    {
+                      "type": "mutation",
+                      "api": "Application",
+                      "mutation": "mutation CreateBusinessPartnerAddress($payload: [BusinessPartnerAddressCreatePayloadInput!]!) {\n  createBusinessPartnerAddress(payload: $payload) {\n    id\n    code\n  }\n}",
+                      "transforms": {
+                        "pre": "(\r\n  $addressToString := function($address){(\r\n    $lines := $join($address.lines, \"\\n\");\r\n    $everythingElse := $join([$address.city, $address.state, $address.postalCode, $address.country][$isNotNilOrEmpty($)], \", \");\r\n\r\n    $join([$lines, $everythingElse], \"\\n\");\r\n\r\n  )};\r\n\r\n  $metadata.urlParameters.businessPartnerId?(\r\n    $data :=data~>| $ | { \r\n      \"businessPartnerId\": $metadata.urlParameters.businessPartnerId,\r\n      \"textAddress\": textAddress? textAddress : $addressToString(address) \r\n      }, \r\n      [\"total\", \"edges\", \"id\"] |;\r\n    \r\n    {\r\n      \"payload\":{\r\n        \"create\": $data    \r\n      }\r\n    }\r\n  )\r\n  :\r\n  $throw(\"No Business Partner Id Provided.\")\r\n)"
+                      }
+                    },
+                    {
+                      "type": "transformation",
+                      "transformation": "\r\n$components.OrderLineCreateForm.fn.setValue(\"businessPartnerAddress\", $first($$.createBusinessPartnerAddress))",
+                      "remote": false
+                    }
+                  ]
+                },
+                "displayName": "Action Button",
+                "custom": {
+                  "elementName": "ActionButton5"
+                },
+                "parent": "aI63YMV2hR",
+                "hidden": false,
+                "nodes": [],
+                "linkedNodes": {}
+              }
+            }
+          }
+        }
+      ]
+    }
+  },
+  "routes": []
+}

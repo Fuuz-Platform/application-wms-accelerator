@@ -1,0 +1,55 @@
+{
+  "api": "application",
+  "modelName": "ReceiptStatus",
+  "payload": [
+    {
+      "id": "canceled",
+      "receiptExceptionUse": false,
+      "receiptLineUse": false,
+      "receiptUse": false,
+      "system": true,
+      "usable": true,
+      "code": "Canceled",
+      "description": "The Receipt has been canceled and can not be completed ",
+      "externalId": null,
+      "customData": null,
+      "integrationData": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "confirmed",
+      "receiptExceptionUse": false,
+      "receiptLineUse": false,
+      "receiptUse": false,
+      "system": true,
+      "usable": true,
+      "code": "Confirmed",
+      "description": "Indicates that the receipt has been confirmed and the inventory has been created.",
+      "externalId": null,
+      "customData": null,
+      "integrationData": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "pendingConfirmation",
+      "receiptExceptionUse": false,
+      "receiptLineUse": false,
+      "receiptUse": false,
+      "system": true,
+      "usable": true,
+      "code": "Pending Confirmation",
+      "description": "Indicates that the receipt has been created and has not been confirmed",
+      "externalId": null,
+      "customData": null,
+      "integrationData": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

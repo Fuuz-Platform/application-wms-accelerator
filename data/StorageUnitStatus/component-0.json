@@ -1,0 +1,27 @@
+{
+  "api": "application",
+  "modelName": "StorageUnitStatus",
+  "payload": [
+    {
+      "id": "available",
+      "code": "Available",
+      "active": true,
+      "usable": true,
+      "description": "Indicates that the Storage Unit is available to be used.",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "unavailable",
+      "code": "Unavailable",
+      "active": true,
+      "usable": true,
+      "description": "Indicates that the storage unit is not available and can not be used currently ",
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

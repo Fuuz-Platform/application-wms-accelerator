@@ -1,0 +1,63 @@
+{
+  "api": "application",
+  "modelName": "ReceiptExceptionReason",
+  "payload": [
+    {
+      "id": "damaged",
+      "usable": true,
+      "name": "Damaged",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "expired",
+      "usable": true,
+      "name": "Expired",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "missingProduct",
+      "usable": true,
+      "name": "Missing Product",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "other",
+      "usable": true,
+      "name": "Other",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "quality",
+      "usable": true,
+      "name": "Quality",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "quantity",
+      "usable": true,
+      "name": "Quantity",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "wrongProduct",
+      "usable": true,
+      "name": "Wrong product",
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

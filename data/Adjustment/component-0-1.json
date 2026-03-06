@@ -1,0 +1,35 @@
+{
+  "api": "application",
+  "modelName": "Adjustment",
+  "payload": [
+    {
+      "id": "cycleCounted",
+      "name": "Cycle Counted",
+      "tolerance": 1,
+      "countLineInventoryUse": true,
+      "system": true,
+      "usable": true,
+      "externalId": null,
+      "customData": null,
+      "integrationData": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "noChange",
+      "name": "No Change",
+      "tolerance": 1,
+      "countLineInventoryUse": true,
+      "system": true,
+      "usable": true,
+      "externalId": null,
+      "customData": null,
+      "integrationData": null,
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}

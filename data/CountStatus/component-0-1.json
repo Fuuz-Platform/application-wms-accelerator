@@ -1,0 +1,47 @@
+{
+  "api": "application",
+  "modelName": "CountStatus",
+  "payload": [
+    {
+      "id": "cancelled",
+      "active": true,
+      "usable": true,
+      "description": "Indicates that a count has been cancelled and is no longer active.",
+      "name": "Cancelled ",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "completed",
+      "active": true,
+      "usable": true,
+      "description": "Indicates that a count has been completed and is no longer active",
+      "name": "Completed",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "new",
+      "active": true,
+      "usable": true,
+      "description": "Indicates that a count has been created but is not ready to start yet.",
+      "name": "New",
+      "_customFields": {
+        "_externalId": null
+      }
+    },
+    {
+      "id": "started",
+      "active": true,
+      "usable": true,
+      "description": "Indicates that a count  has been started and is in progress.",
+      "name": "Started",
+      "_customFields": {
+        "_externalId": null
+      }
+    }
+  ],
+  "metadata": {}
+}
