@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>application-wms-accelerator &mdash; Fuuz Accelerator</title>
+<meta name="description" content="Fuuz accelerator: Warehouse Management System â€” receiving, put-away, picking, shipping, inventory">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://accelerators.fuuz.com/application-wms-accelerator/">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://accelerators.fuuz.com/application-wms-accelerator/">
+<meta property="og:site_name" content="Fuuz Accelerators">
+<meta property="og:title" content="application-wms-accelerator &mdash; Fuuz Accelerator">
+<meta property="og:description" content="Fuuz accelerator: Warehouse Management System â€” receiving, put-away, picking, shipping, inventory">
+<link rel="icon" href="assets/appicon-violet.svg">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="prose.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareSourceCode",
+  "name": "application-wms-accelerator",
+  "url": "https://accelerators.fuuz.com/application-wms-accelerator/",
+  "description": "Fuuz accelerator: Warehouse Management System \u00e2\u20ac\u201d receiving, put-away, picking, shipping, inventory",
+  "codeRepository": "https://github.com/Fuuz-Platform/application-wms-accelerator",
+  "applicationCategory": "BusinessApplication",
+  "runtimePlatform": "Fuuz",
+  "author": {
+    "@type": "Organization",
+    "name": "Fuuz",
+    "url": "https://fuuz.com"
+  }
+}
+</script>
+</head>
+<body>
+<header class="topbar">
+  <div class="wrap">
+    <a class="logo" href="../"><img src="assets/logo-horizontal-on-midnight.svg" alt="Fuuz"></a>
+    <span class="section">Accelerators</span>
+    <nav><a href="#table-of-contents">Table of Contents</a><a href="#overview">Overview</a><a href="#module-structure">Module Structure</a><a href="https://github.com/Fuuz-Platform/application-wms-accelerator">GitHub</a></nav>
+  </div>
+</header>
+<main>
+<div class="wrap hero">
+  <p class="eyebrow">Accelerator &middot; Installs into a tenant</p>
+  <h1>application-wms-accelerator<span class="accent"></span></h1>
+  <p class="lede">Fuuz accelerator: Warehouse Management System â€” receiving, put-away, picking, shipping, inventory</p>
+  <div class="ctas">
+    <a class="cta cta-primary" href="https://github.com/Fuuz-Platform/application-wms-accelerator">Get the package</a>
+    <a class="cta cta-secondary" href="../">All accelerators</a>
+  </div>
+</div>
+<section>
+  <div class="wrap prose">
+<blockquote>
+<p><strong>Fuuz Industrial Operations Platform — Warehouse Management System</strong>
+Package Version: <code>2.0.0</code> | Platform Version: <code>2025.12.1</code> | Spec: <code>2.0.0</code></p>
+</blockquote>
+<p>The <strong>WMS</strong> accelerator is a production-ready Warehouse Management System built on the <a href="https://fuuz.com">Fuuz Industrial Operations Platform</a>. It delivers end-to-end warehouse operations management — from inbound receiving and putaway through inventory control, order fulfillment, wave picking, and shipping — built on an ISA-95-compliant site hierarchy.</p>
+<p>This package contains <strong>33 modules</strong> across <strong>12 functional areas</strong>, <strong>46 data flows</strong>, <strong>72 data models</strong>, <strong>56 screens</strong>, and <strong>32 seed data records</strong>.</p>
+<hr />
+<h2 id="table-of-contents">Table of Contents</h2>
+<ol>
+<li><a href="#overview">Overview</a></li>
+<li><a href="#module-structure">Module Structure</a></li>
+<li><a href="#functional-areas">Functional Areas</a></li>
+<li><a href="#data-flows">Data Flows</a></li>
+<li><a href="#data-models">Data Models</a></li>
+<li><a href="#screens">Screens</a></li>
+<li><a href="#access-control">Access Control</a></li>
+<li><a href="#package-contents">Package Contents</a></li>
+<li><a href="#dependencies">Dependencies</a></li>
+<li><a href="#installation">Installation</a></li>
+</ol>
+<hr />
+<h2 id="overview">Overview</h2>
+<p>The WMS accelerator provides the foundational and operational infrastructure for warehouse management, including:</p>
+<ul>
+<li><strong>Receiving</strong> — Purchase order-based receipt processing with status lifecycle (Pending Confirmation → Confirmed / Canceled), exception handling, and inventory creation on confirmation</li>
+<li><strong>Inventory Management</strong> — Real-time inventory tracking by storage unit, lot, and serial number; inventory status management (Ok, Hold, Damaged, Lost, Retired); inventory transactions including moves, splits, and merges</li>
+<li><strong>Order Fulfillment</strong> — Outbound order processing with full status lifecycle (New → Pending Fulfillment → Partial Fulfillment → Fulfilled / Cancelled), wave picking for grouped order execution, and packing/shipping workflows</li>
+<li><strong>Cycle Counting</strong> — Scheduled and ad-hoc inventory counts with status workflow (New → Started → Completed / Cancelled) and variance management</li>
+<li><strong>Site Management</strong> — ISA-95-compliant facility hierarchy (Site → Area → Line → Cell) for location-based inventory and operational organization</li>
+<li><strong>System Platform</strong> — Access control, configuration, IoT integration, scheduling, orchestration, data modeling, business intelligence, and application lifecycle management</li>
+</ul>
+<hr />
+<h2 id="module-structure">Module Structure</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Module Group</th>
+<th>Modules</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Applications</strong></td>
+<td>Application Connector, Application Lifecycle Management, Application Trace</td>
+</tr>
+<tr>
+<td><strong>Customer Relationship Management</strong></td>
+<td>Sales</td>
+</tr>
+<tr>
+<td><strong>Human Capital Management</strong></td>
+<td>Employees</td>
+</tr>
+<tr>
+<td><strong>Inventory Management</strong></td>
+<td>Cycle Counting, Inventory Tracking</td>
+</tr>
+<tr>
+<td><strong>Materials Management</strong></td>
+<td>Inventory, Logistics, Storage Management</td>
+</tr>
+<tr>
+<td><strong>Order Fulfillment</strong></td>
+<td>Order Processing, Order Tracking, Wave Picking</td>
+</tr>
+<tr>
+<td><strong>Product Data Management</strong></td>
+<td>Engineering, Materials, Quality</td>
+</tr>
+<tr>
+<td><strong>Production Management</strong></td>
+<td>Advanced Production Scheduling, Customer Management, Kanban Production, Manufacturing, Planning, Product Data Management, Supplier Management, Work Order Management</td>
+</tr>
+<tr>
+<td><strong>Receiving</strong></td>
+<td>Order Receiving</td>
+</tr>
+<tr>
+<td><strong>Site Management</strong></td>
+<td>Site Management</td>
+</tr>
+<tr>
+<td><strong>Supply Chain Management</strong></td>
+<td>Procurement</td>
+</tr>
+<tr>
+<td><strong>System</strong></td>
+<td>Access Control, Application Setup, Configuration, Dashboard, Data Management, Data Modeling, Files, Integration, Internet of Things, Orchestration, Scheduling, Testing</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="functional-areas">Functional Areas</h2>
+<h3>Receiving</h3>
+<p>Inbound shipment processing with exception management:</p>
+<ul>
+<li><strong>Order Receiving</strong> — PO-linked receipt creation and confirmation workflow; receipt status lifecycle: Pending Confirmation → Confirmed / Canceled; inventory record creation upon receipt confirmation; receipt line-level quantity tracking</li>
+<li><strong>Receipt Exception Handling</strong> — Capture and classify inbound exceptions (damage, quantity discrepancy, wrong item); exception reason code management with configurable resolution workflows</li>
+<li><strong>Putaway</strong> — Location assignment and directed putaway based on site hierarchy and storage rules</li>
+</ul>
+<h3>Inventory Management</h3>
+<p>Real-time inventory visibility and control:</p>
+<ul>
+<li><strong>Inventory Tracking</strong> — Real-time inventory balance visibility by storage unit, location, lot, and serial number; inventory status lifecycle management: Ok, Hold, Damaged, Lost, Retired</li>
+<li><strong>Inventory Transactions</strong> — Full transaction audit trail for all inventory movements:</li>
+<li><strong>Inventory Move</strong> — Transfer inventory from one storage unit to another</li>
+<li><strong>Inventory Split</strong> — Split quantity from an existing inventory record into a new record</li>
+<li><strong>Inventory Merge</strong> — Consolidate quantity from one inventory record into an existing record</li>
+<li><strong>Cycle Counting</strong> — Scheduled and ad-hoc cycle counts with count status lifecycle: New → Started → Completed / Cancelled; variance capture and approval workflow; location-based count task assignment</li>
+</ul>
+<h3>Order Fulfillment</h3>
+<p>Outbound order management and execution:</p>
+<ul>
+<li><strong>Order Processing</strong> — Outbound order management with full status lifecycle: New → Pending Fulfillment → Partial Fulfillment → Fulfilled / Cancelled; order line and release-level tracking; pick, pack, and ship execution</li>
+<li><strong>Order Tracking</strong> — Real-time visibility into open orders, order lines, and releases for outbound shipments; order progress monitoring and exception management</li>
+<li><strong>Wave Picking</strong> — Group multiple orders into pick waves for efficient warehouse floor execution; wave release and assignment to warehouse operators; pick confirmation and quantity verification</li>
+</ul>
+<h3>Site Management</h3>
+<p>ISA-95-compliant facility hierarchy:</p>
+<ul>
+<li><strong>Site Management</strong> — Define and manage the complete ISA-95 equipment hierarchy: Site → Area → Line → Cell; location-based inventory assignment and operational zone management; foundation for directed putaway rules and inventory location tracking</li>
+</ul>
+<h3>Materials Management</h3>
+<p>Inventory and logistics operations shared with MES:</p>
+<ul>
+<li><strong>Inventory</strong> — Inventory balance tracking by location and lot/serial with transaction history</li>
+<li><strong>Storage Management</strong> — Location hierarchy, bin/rack/shelf assignment, and storage rule configuration</li>
+<li><strong>Logistics</strong> — Material movement workflows including transfers and inter-facility logistics</li>
+</ul>
+<h3>Product Data Management</h3>
+<p>Engineering and specification master data:</p>
+<ul>
+<li><strong>Engineering</strong> — Engineering change management and revision-controlled engineering data</li>
+<li><strong>Materials</strong> — Material master data with specifications and procurement parameters</li>
+<li><strong>Quality</strong> — Quality specification management linked to inspection plans</li>
+</ul>
+<h3>Supply Chain Management</h3>
+<p>Procurement operations:</p>
+<ul>
+<li><strong>Procurement</strong> — Purchase order management, receiving integration, supplier performance tracking, and procurement approval workflows</li>
+</ul>
+<h3>System Platform</h3>
+<p>Core platform infrastructure and administration:</p>
+<ul>
+<li><strong>Access Control</strong> — Role-based access management, permission assignment, and user provisioning</li>
+<li><strong>Configuration</strong> — System-wide settings including reason codes, unit-of-measure tables, and lookup tables</li>
+<li><strong>Scheduling</strong> — Background job scheduling for automated flow execution and maintenance triggers</li>
+<li><strong>Orchestration</strong> — Multi-step workflow orchestration for complex cross-module business processes</li>
+<li><strong>Internet of Things</strong> — Device registry, tag mapping, and real-time data ingestion from sensors and SCADA systems</li>
+<li><strong>Integration</strong> — Generic integration framework for external system connectivity</li>
+<li><strong>Data Modeling</strong> — Platform-level data model management and schema configuration</li>
+<li><strong>Business Intelligence</strong> — Configurable analytics and reporting with dashboard builder</li>
+<li><strong>Application Lifecycle Management</strong> — Package versioning, deployment, and environment promotion workflows</li>
+</ul>
+<hr />
+<h2 id="data-flows">Data Flows</h2>
+<p>The package includes <strong>46 data flow files</strong> organized by functional area:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Flow Type</th>
+<th>Examples</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>System (Scheduled)</strong></td>
+<td>Inventory balance recalculation; cycle count task generation; order status transition automation</td>
+</tr>
+<tr>
+<td><strong>System (Background)</strong></td>
+<td>Receipt confirmation inventory creation; wave release processing; order fulfillment status updates</td>
+</tr>
+<tr>
+<td><strong>Screen</strong></td>
+<td>UI-driven flows for receipt entry, inventory moves, count recording, order processing, and wave picking</td>
+</tr>
+<tr>
+<td><strong>Integration</strong></td>
+<td>ERP purchase order sync; outbound shipment confirmation; inventory transaction export</td>
+</tr>
+</tbody>
+</table></div>
+<p>Flow types used across the package:
+- <strong>System</strong> — Backend/scheduled business logic, data processing, and automated state management
+- <strong>Screen</strong> — User-interface-triggered flows responding to operator actions and form submissions
+- <strong>Integration</strong> — External system connectors for ERP, carrier, and trading partner integration</p>
+<hr />
+<h2 id="data-models">Data Models</h2>
+<p>The package includes <strong>72 data model files</strong> spanning all functional areas:</p>
+<p><strong>Receiving</strong> — Receipt, ReceiptLine, ReceiptException, ReceiptStatus, ReceiptExceptionReason</p>
+<p><strong>Inventory</strong> — Inventory, InventoryTransaction, StorageUnit, StorageUnitStatus, InventoryStatus, TransactionType, Lot, Serial</p>
+<p><strong>Order Fulfillment</strong> — Order, OrderLine, OrderLineRelease, OrderStatus, OrderType, OrderLineReleaseStatus, OrderLineReleaseType, Wave, WaveLine, PickTask</p>
+<p><strong>Cycle Counting</strong> — CycleCount, CycleCountLine, CountStatus, CountVariance</p>
+<p><strong>Site</strong> — Site, Area, Line, Cell, Location</p>
+<p><strong>System</strong> — Configuration, Sequence, ApplicationSetting, AuditLog, FileAttachment, IoTDevice, IoTTag, IntegrationMapping</p>
+<hr />
+<h2 id="screens">Screens</h2>
+<p>The package includes <strong>56 screen files</strong> providing warehouse operational interfaces:</p>
+<ul>
+<li>Inbound receiving screens with receipt creation, line entry, and confirmation workflows</li>
+<li>Receipt exception capture and resolution screens</li>
+<li>Inventory management screens with status, location, and transaction visibility</li>
+<li>Inventory move, split, and merge transaction entry screens</li>
+<li>Order management and fulfillment tracking dashboards</li>
+<li>Wave creation, release, and pick task execution screens</li>
+<li>Cycle count initiation, count entry, and variance review screens</li>
+<li>Site hierarchy management and location configuration screens</li>
+<li>System configuration and administration panels</li>
+</ul>
+<hr />
+<h2 id="access-control">Access Control</h2>
+<p>The package establishes core warehouse roles:</p>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Role</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>WMS Administrator</td>
+<td>Full system access including configuration and module management</td>
+</tr>
+<tr>
+<td>Warehouse Manager</td>
+<td>Full warehouse operations management and reporting</td>
+</tr>
+<tr>
+<td>Warehouse Supervisor</td>
+<td>Order release, wave management, and operator oversight</td>
+</tr>
+<tr>
+<td>Warehouse Operator</td>
+<td>Directed warehouse tasks: receive, pick, move, count</td>
+</tr>
+<tr>
+<td>Inventory Analyst</td>
+<td>Inventory management, cycle counts, adjustments, and reporting</td>
+</tr>
+<tr>
+<td>Receiving Clerk</td>
+<td>Inbound receipt processing and exception handling</td>
+</tr>
+<tr>
+<td>System Administrator</td>
+<td>User management, access control, and integration configuration</td>
+</tr>
+</tbody>
+</table></div>
+<hr />
+<h2 id="package-contents">Package Contents</h2>
+<pre><code>wms/
+├── manifest.json          # Package metadata (version 2.0.0)
+├── definition.json        # Package structure and selection definitions
+├── package-data.json      # All seed data (modules, config, lookup tables)
+├── data/                  # 32 seed data files
+├── dataFlows/             # 46 data flow definitions
+├── dataModels/            # 72 data model definitions
+└── screens/               # 56 screen definitions
+</code></pre>
+<p>The <strong>32 seed data records</strong> establish the foundational warehouse configuration:
+- Complete module group and module registry (12 groups, 33 modules)
+- Order status lifecycle values: New, Pending Fulfillment, Partial Fulfillment, Fulfilled, Cancelled
+- Receipt status lifecycle values: Pending Confirmation, Confirmed, Canceled
+- Inventory status values: Ok, Hold, Damaged, Lost, Retired
+- Inventory transaction types: Inventory Move, Inventory Split, Inventory Merge
+- Cycle count status values: New, Started, Completed, Cancelled
+- Order type definitions (Purchase) with extensibility for additional types
+- Sequence number configuration for orders, receipts, and counts</p>
+<hr />
+<h2 id="dependencies">Dependencies</h2>
+<div class="tablewrap"><table>
+<thead>
+<tr>
+<th>Dependency</th>
+<th>Version</th>
+<th>Required</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Fuuz Industrial Operations Platform</td>
+<td><code>&gt;= 2025.12.1</code></td>
+<td>Required</td>
+</tr>
+<tr>
+<td><code>application-mes-core-accelerator</code></td>
+<td>any</td>
+<td>Optional (shared modules)</td>
+</tr>
+</tbody>
+</table></div>
+<blockquote>
+<p><strong>Note:</strong> This is the standalone WMS package. It includes shared modules (Production Management, Materials Management, Supply Chain) that overlap with <code>application-mes-core-accelerator</code>. If deploying alongside the full MES suite, coordinate module registry seeding to avoid duplicate entries. For a complete production-and-warehouse deployment, see <code>application-mes-accelerator</code>.</p>
+</blockquote>
+<hr />
+<h2 id="installation">Installation</h2>
+<ol>
+<li>Ensure your Fuuz platform instance is running version <code>&gt;= 2025.12.1</code></li>
+<li>Navigate to <strong>Platform &gt; Packages</strong> in your Fuuz tenant</li>
+<li>Import the <code>wms</code> package (<code>.fuuz</code> file or directory import)</li>
+<li>Run the module registry seeding flows to populate module group and module tables</li>
+<li>Configure the ISA-95 site hierarchy (Site → Area → Line → Cell) for your facility</li>
+<li>Assign roles and users per the Access Control section above</li>
+<li>Apply system configuration defaults appropriate for your facility</li>
+<li>Configure order type and status lookup tables for your operational workflows</li>
+<li>Set up ERP integration credentials if synchronizing purchase orders and inventory</li>
+<li>Validate the deployment by processing a test receipt end-to-end</li>
+</ol>
+<p>For detailed setup and configuration documentation, see the <a href="https://help.fuuz.com">Fuuz Platform Documentation</a>.</p>
+  </div>
+</section>
+</main>
+<footer>
+  <div class="wrap">
+    <p>Fuuz&reg; is an Enterprise Industrial Intelligence Platform.
+      <a href="https://accelerators.fuuz.com/">All accelerators</a> &middot;
+      <a href="https://github.com/Fuuz-Platform/application-wms-accelerator">Source</a> &middot;
+      <a href="https://fuuz.com">fuuz.com</a></p>
+  </div>
+</footer>
+</body>
+</html>
