@@ -247,3 +247,9 @@ The **32 seed data records** establish the foundational warehouse configuration:
 10. Validate the deployment by processing a test receipt end-to-end
 
 For detailed setup and configuration documentation, see the [Fuuz Platform Documentation](https://help.fuuz.com).
+
+## Service levels
+
+No service level agreement applies to anything published here. It becomes a supported
+deliverable only once it has been implemented by a Fuuz services professional or an
+approved Fuuz partner.
